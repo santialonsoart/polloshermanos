@@ -1,0 +1,55 @@
+.location-section {
+    background-image: url(/src/assets/images/location/location-img.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    &-map {
+        width: auto;
+        iframe {
+            width: auto;
+        }
+    }
+
+    &-info {
+        background-color: $c-lph-soft-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: .25rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        color: $c-white;
+        button {
+            margin: 1rem 0;
+            a {
+                color: $c-lph-dark-blue;
+                text-decoration: none;
+            }
+            &:hover {
+                color: $c-white;
+            }
+            &:hover {
+                a {
+                    color: $c-white;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: $d-m) {
+        flex-direction: row;
+        justify-content: space-between;
+        &-map {
+            width: 50%;
+            iframe {
+                width: 100%;
+            }
+        }
+        &-info {
+            width: 45%;
+            margin-bottom: 0;
+        }
+    }
+}

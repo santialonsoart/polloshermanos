@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="Los Pollos Hermanos" content="The first establishment in Spain to incorporate the new
+    company image." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Pollos Hermanos</title>
+  </head>
+  <body>
+    <header class="header-menu">
+      <nav class="wrapper">
+        <picture class="header-menu-logo">
+          <a href="/index.html">
+            <img src="/src/assets/images/header/lph-logo.png">
+          </a>
+        </picture>
+        <ul class="header-menu-links">
+          <li>
+            <a name="navigation" href="#hero"><i class="fa-solid fa-circle-info"></i>Info</a>
+          </li>
+          <li>
+            <a name="navigation" href="#menu"><i class="fa-solid fa-utensils"></i>Menu</a>
+          </li>
+          <li>
+            <a name="navigation" href="#location"><i class="fa-solid fa-location-dot"></i>Location</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section" id="hero">
+        <article class="hero-section-info">
+          <h2>Order fried chicken now</h2>
+          <h3>Get famous chicken however you want it.</h3>
+          <button type="button" value="Order now"><a href="#menu">Order now</a></button>
+        </article>
+        <article class="hero-section-video">
+          <video src="/src/assets/videos/hero-video.mp4" autoplay loop></video>
+        </article>
+      </section>
+
+      <section class="menu-section wrapper" id="menu">
+        <h2>Menu</h2>
+        <p>Menu varies by location. Please contact your local restaurant to verify menu availability.</p>
+
+        <article class="menu-section-container">
+          <div id="items" class="menu-section-items"></div>
+          <aside class="menu-section-cart">
+            <h3>Your order <i class="fa-solid fa-cart-shopping"></i></h3>
+            <ul id="cart" class="list-group"></ul>
+            <p class="txt-bold txt-big total-text">Total: <span id="total"></span>&euro;*</p>
+            <p class="txt-small">*21% VAT added on the price of the products</p>
+            <button type="button" class="continue-button">Continue</button>
+            <button type="button" id="delete-button" class="cancel-button">Delete</button>
+          </aside>
+        </article>
+      </section>
+
+      <section class="location-section wrapper" id="location">
+        <article class="location-section-map" id="">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5452819358575!2d-3.69130868460402!3d40.418923179364896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289b8d392581%3A0x32bfed1206105c2b!2sC.%20de%20Valenzuela%2C%204%2C%2028014%20Madrid!5e0!3m2!1ses!2ses!4v1657297958374!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <article class="location-section-info">
+          <h2>New Los Pollos Hermanos restaurant in Madrid!</h2>
+          <div>
+            <p>The first establishment in Spain to incorporate the new company image. The restaurants sporting the new image have been warmly welcomed by the public, with growth above 30% in those premises with the new Los Pollos Hermanos identity.</p>
+            <p>Los Pollos Hermanos, flagship brand of Eat Out restoration group, announced the opening its first restaurant in Madrid, at <span class=txt-bold>Puerta de Alcalá</span>.</p>
+          </div>        
+          <button type="button" value="Get directions"><a href="https://goo.gl/maps/p7LemcizJ7ZWhqfa9" target="_blank">Get directions</a></button>
+        </article>
+      </section>
+      
+      <section class="partners-section wrapper">
+        <article class="partners-section-partner">
+          <p>Event by:</p>
+          <picture><img src="/src/assets/images/header/lph-logo.png"></picture>
+        </article>
+        <article class="partners-section-partner">
+          <p>In partnership with:</p>
+          <picture><img class="fever-logo" src="/src/assets/images/general/fever-logo.svg"></picture>
+        </article>
+      </section>
+    </main>
+    <footer class="footer wrapper">
+      <p>© 2022 LPH / Los pollos hermanos. All Rights Reserved. Los Pollos Hermanos is an original license. <a href="#">Privacy policy</a></p>
+    </footer>
+    
+   <script src="/src/mobile-menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/cart.js"></script>
+    <!-- Do not edit below this line -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

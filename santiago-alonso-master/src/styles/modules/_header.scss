@@ -1,0 +1,85 @@
+@import '/src/styles/general/typography';
+@import '/src/styles/general/variables';
+
+.header-menu {
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $c-lph-yellow;
+    }
+
+    .nav-scroll {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    &-logo {
+        width: 25%;
+        a {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        li {
+            margin: .5rem;
+            a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                color: $c-lph-dark-blue;
+                padding: .5rem;
+                display: flex;
+                flex-direction: column;
+                svg {
+                    margin-bottom: .25rem;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: $d-m) {
+        .nav-scroll {
+            position: relative;
+        }
+
+        &-logo {
+            width: 20%;
+            a {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+        &-links {
+            li {
+                a {
+                    flex-direction: row;
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    padding: 1rem;
+                    svg {
+                        margin-right: .5rem;
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                        background-color: $c-lph-dark-blue;
+                        color: $c-white;
+                        border-radius: 4px;
+                    }
+                    &:focus {
+                        background-color: $c-lph-dark-blue;
+                        color: $c-white;
+                    }
+                }
+            }
+        }
+    }
+}

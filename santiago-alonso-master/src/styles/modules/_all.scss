@@ -1,0 +1,70 @@
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'location';
+@import 'partners';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, button, p, li {
+    font-family: $f-roboto;
+}
+
+.wrapper {
+    padding: 1rem 4%;
+    @media only screen and (min-width: $d-l) and (max-width: $d-tablet) {
+        padding: 2rem;
+    }
+    @media onlyscreen and (min-width: $d-l) {
+        padding: 2rem 10rem;
+    }
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: $c-lph-yellow;
+    color: $c-lph-dark-blue;
+    border: none;
+    border-radius: .25rem;
+    &:active {
+        background-color: $c-lph-dark-blue;
+        color: $c-white;
+    }
+    @media screen and (min-width: $d-l) {
+        &:hover {
+            background-color: $c-lph-dark-blue;
+            color: $c-white;
+            cursor: pointer;
+        }
+    }
+}
+
+.txt-small {
+    font-size: .75rem;
+}
+
+.txt-bold {
+    font-weight: 700;
+}
+
+.txt-big {
+    font-size: 1.25rem;
+}

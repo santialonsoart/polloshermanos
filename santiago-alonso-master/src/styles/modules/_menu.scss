@@ -1,0 +1,139 @@
+.menu-section {
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: .5px solid $c-grey;
+            border-radius: .25rem;
+            box-shadow: 0 .25rem .25rem $c-grey;
+            margin-bottom: 1.25rem;
+            .card-title-section {
+                display: flex;
+                align-items: center;
+                .card-title {
+                    color: $c-lph-soft-blue;
+                    font-size: 1.25rem;
+                    margin: 1rem 0;
+                }
+                .card-price {
+                    color: $c-lph-dark-blue;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    margin-left: .25rem;
+                }
+            }
+            .txt-big {
+                margin: 0 0 1rem;
+                color: $c-lph-semantic-info;
+                }
+        
+            .card-description {
+                font-size: 1rem;
+                margin-top: 0;
+            }
+        }
+        img {
+            width: 100%;
+            border-radius: .25rem;
+        }
+    }
+    &-cart {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $c-lph-soft-blue;
+        border-radius: .25rem;
+        padding: 1rem 1rem 1rem 1.5rem;
+        h3 {
+            margin: .5rem 0;
+        }
+        .list-group {
+            padding-left: 0;
+            list-style: none;
+            .list-group-item {
+                margin-bottom: 1rem;
+                
+            }
+        }
+        .delete-button {
+            padding: .25rem;
+            background-color: white;
+            border: 1px solid $c-lph-orange;
+            color: $c-lph-orange;
+            &:active {
+                background-color: $c-lph-orange;
+                color: $c-white;
+            }
+        }
+        .cancel-button {
+            font-size: 1rem;
+            padding: .5rem;
+            background-color: white;
+            color: $c-lph-orange;
+            border: 1px solid $c-lph-orange;
+            border-radius: .25rem;
+            &:active {
+                border: 1px solid $c-lph-orange;
+                background-color: $c-lph-orange;
+                color: $c-white;
+            }
+        }
+        .continue-button {
+            margin: 1rem 0;
+            padding: .5rem;
+        }
+
+        p {
+            margin: .25rem 0;
+        }
+
+        .total-text {
+            color: $c-lph-dark-blue;
+        }
+    }
+    @media screen and (min-width: $d-l) {
+        &-container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-items {
+            width: 75%;
+            .card {
+                width: 32%;
+            }
+        }
+        &-cart {
+            width: 22%;
+            border-left: 1px solid $c-lph-soft-blue;
+            border-bottom: none;
+            border-top: none;
+            border-right: none;
+            align-self: flex-start;
+            h3 {
+                margin: 1rem 0;
+            }
+            .delete-button {
+                &:hover {
+                    background-color: $c-lph-orange;
+                    color: $c-white;
+                }
+            }
+            .cancel-button {
+                &:hover {
+                    border: 1px solid $c-lph-orange;
+                    background-color: $c-lph-orange;
+                    color: $c-white;
+                }
+            }
+        }
+    }
+}

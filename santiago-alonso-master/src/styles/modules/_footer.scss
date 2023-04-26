@@ -1,0 +1,12 @@
+.footer {
+    background-color: $c-lph-dark-blue;
+    color: $c-white;
+    text-align: center;
+    font-size: .75rem;
+    a{
+        color: $c-white;
+    }
+    @media screen and (min-width: $d-l) {
+        font-size: 1rem;
+    }
+}

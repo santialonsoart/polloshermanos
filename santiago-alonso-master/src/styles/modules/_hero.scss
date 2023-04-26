@@ -1,0 +1,64 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-info {
+        order: 2;
+        padding: 1rem 0;
+        z-index: 2;
+        margin-top: -1rem;
+        background-color: $c-lph-soft-blue;
+        text-align: center;
+        color: $c-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        h2, h3 {
+            margin: 0 0 .5rem 0;
+            font-size: 1.25rem;
+        }
+        button {
+            margin: .5rem 0;
+            a {
+                color: $c-lph-dark-blue;
+                text-decoration: none;
+            }
+            &:hover {
+                color: $c-white;
+            }
+            &:hover {
+                a {
+                    color: $c-white;
+                }
+            }
+        }
+    }
+    &-video {
+        width: 100%;
+        top: 0;
+        right: 0;
+        video {
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: $d-m) { 
+
+        &-info {
+            position: absolute;
+            width: 55%;
+            padding: 2rem;
+            border-radius: .25rem;
+            h2, h3 {
+                font-size: 1.5rem;
+            }
+            button {
+                margin: 1.5rem 0 0;
+            }
+            @media screen and (min-width: $d-tablet) { 
+                width: 30%;
+            }
+        }
+    }
+}
